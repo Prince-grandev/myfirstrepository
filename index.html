@@ -1,50 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create three equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biopage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-    <h2>Three Equal Columns</h2>
+</body>
+<h1 style="background-color: #333333;text-align: center;">Student Bio</h1>
 
-    <div class="row">
-        <div class="column" style="background-color:#aaa;">
-            <h2>Column 1</h2>
-            <p>Some text..</p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
-        </div>
-        <div class="column" style="background-color:#ccc;">
-            <h2>Column 3</h2>
-            <p>Some text..</p>
-        </div>
+<div class="container">
+
+    <div id="main-bio">
+        <h2>Prince Obulor</h2>
+        <img id="bio-image"
+            src="https://media.licdn.com/dms/image/D5603AQHxVLaF7ynGNQ/profile-displayphoto-shrink_800_800/0/1675215499127?e=1712188800&v=beta&t=MiR9CCi3cJgAUUUKqXybKrE1vPQsPVMub9AlEwAbP_w"
+            alt="profile picture">
+        <p>Hi my name is Prince Obulor. Im a fullstack web developer and engineer. In a world of changing trends, tech
+            is definitely here to stay so im glad to participate and utilize my programming skills to solve acute
+            problems.</p>
     </div>
 
-</body>
+    <div id="contact-info">
+        <ul>
+            <li><a href="princeobulor20@gmail.com">princeobulor20@gmail.com</a></li>
+            <li><a href="https://github.com/Prince-grandev">Prince-grandev</a></li>
+            <li><a href="https://prince-grandev.github.io/myfirstrepository/">coming soon</a></li>
+        </ul>
+
+    </div>
+</div>
 
 </html>
