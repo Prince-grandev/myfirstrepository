@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        html {
+            min-height: 100%;
+            /* fill the screen height to allow vertical alignement */
+            display: grid;
+            /* display:flex works too since body is the only grid cell */
+        }
+
+        body {
+            margin: auto;
+        }
+
+        body {
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        <fieldset style="width: 1200px; border-color: blue;">
+            <legend>Contact Form</legend>
+            <input type="hidden" name="access_key" value="2ec6b589-eac9-4b4a-9f46-36f96f9fe30e" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="hidden" name="redirect"
+                value="https://prince-grandev.github.io/myfirstrepository/confirmation-page.html" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Jack Robinson" required />
+                <br><br>
+            </div>
+            <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email" id="email" placeholder="jack@gmail.com" required /><br><br>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <br>
+                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required /><br><br>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <br>
+                <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea><br><br>
+            </div>
+
+            <button type="submit"> Send Message </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
